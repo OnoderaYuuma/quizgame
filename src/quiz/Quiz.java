@@ -31,7 +31,7 @@ public class Quiz {
     }
 
 
-
+// テストコード
     public void showQuiz() {
 
         //TODO:実装する
@@ -45,8 +45,8 @@ public class Quiz {
             System.out.println(choice.getIndex() + "." + choice.getText());
 
         }
-//lnに変更しているので後で戻す
-        System.out.println("こたえを入力してください>");
+//lnに変更しているので戻した
+        System.out.print("こたえを入力してください>");
 
     }
 
