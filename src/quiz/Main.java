@@ -41,17 +41,17 @@ public class Main {
 
         quizzes.add(new Quiz(3, "最初の東京オリンピックは何年?", q3Choices, 3));
 
-        // Player player = new Player();
+        Player player = new Player();
 
         System.out.println("-----テスト結果-----");
 
         for (Quiz quiz : quizzes) {
 
-                quiz.showQuiz();
+            quiz.showQuiz();
 
-                String input = null;
+            String input = null;
 
-                // ーーー
+            // ーーー
 
             try {
 
@@ -103,19 +103,18 @@ public class Main {
 
             }
 
-        // if(quiz.isCorrect(inputInt)) {
-        //
-        // player.setCorrectQuizNum(player.getCorrectQuizNum() + 1);
-        //
-        // }
-        
+            // isCorrectがtrueだったら正答数が1プラスされる
+            if (quiz.isCorrect(inputInt)) {
+
+                player.setCorrectQuizNum(player.getCorrectQuizNum() + 1);
+
+            }
+
         }
-        
-        
-        
-        // System.out.println("[結果]");
-        //
-        // player.showCorrectQuizNum();
+
+        System.out.println("[結果]");
+
+        player.showCorrectQuizNum();
 
     }
 

@@ -51,11 +51,11 @@ public class Quiz {
     }
 
 
+// 正解していたらtrueを返す
+   public boolean isCorrect(int givenAnswer) {
 
-//    public boolean isCorrect(int givenAnswer) {
-//
-//        return givenAnswer == this.answer;
-//
-//    }
+       return givenAnswer == this.answer;
+
+   }
 
 }
